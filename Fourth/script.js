@@ -21,28 +21,28 @@ const handleEqual = () => {
 
 	let expression = operationField.innerText;
 	let numStr = '';
-	let num2 = parseInt(inputField.value);
+	let num2 = parseFloat(inputField.value);
 	let ans = '';
 	console.log(expression);
 	for (let c of expression) {
 		if (c === '%') {
-			ans = parseInt(numStr) % num2;
+			ans = parseFloat(numStr) % num2;
 			operationField.innerText = '';
 			inputField.value = ans;
 		} else if (c === '÷') {
-			ans = parseInt(numStr) / num2;
+			ans = parseFloat(numStr) / num2;
 			inputField.value = ans;
 			operationField.innerText = '';
 		} else if (c === '×') {
-			ans = parseInt(numStr) * num2;
+			ans = parseFloat(numStr) * num2;
 			operationField.innerText = '';
 			inputField.value = ans;
 		} else if (c === '+') {
-			ans = parseInt(numStr) + num2;
+			ans = parseFloat(numStr) + num2;
 			inputField.value = ans;
 			operationField.innerText = '';
 		} else if (c === '-') {
-			ans = parseInt(numStr) - num2;
+			ans = parseFloat(numStr) - num2;
 			inputField.value = ans;
 			operationField.innerText = '';
 		} else numStr += c;

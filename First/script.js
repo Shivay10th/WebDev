@@ -11,3 +11,7 @@ function randomColor() {
 	document.body.style.backgroundColor =
 		'rgb(' + r + ', ' + g + ', ' + b + ')';
 }
+
+function reset() {
+	document.body.style.backgroundColor = 'white';
+}

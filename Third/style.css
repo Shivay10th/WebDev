@@ -1,12 +1,17 @@
 .container {
     border: 2px double red;
     width: 500px;
-    margin: 350px;
-    padding: 50px;
+    margin: 100px auto;
+    padding: 50px 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 img{
-    width: 450px;
+    width: 100%;
     height: 550px;
+}
+
+button{
+    margin: 10px;
 }

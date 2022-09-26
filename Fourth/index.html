@@ -1,0 +1,52 @@
+<html>
+
+    <head>
+        <title>Calc</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+    </head>
+
+
+
+    <body>
+        <div class="calc-body">
+
+            <div class="calc-screen">
+                <div id="calc-operation"> </div>
+                <input type="text" id="calc-typed">
+            </div>
+            <div class="calc-button-row">
+                <button class="ac" onclick="reset()">AC</button>
+                <button class="opt">&#43;&#47;&#8722;</button>
+                <button class="opt" onclick="handleOperator('&#37;')">&#37;</button>
+                <button class="opt" onclick="handleOperator('&#247;')">&#247;</button>
+                <button onclick="numberBtn(7)">7</button>
+                <button onclick="numberBtn(8)">8</button>
+                <button onclick="numberBtn(9)">9</button>
+                <button class="opt" onclick="handleOperator('&#215;')">&#215;</button>
+                <button onclick="numberBtn(4)">4</button>
+                <button onclick="numberBtn(5)">5</button>
+                <button onclick="numberBtn(6)">6</button>
+                <button class="opt" onclick="handleOperator('&#8722;')">&#8722;</button>
+                <button onclick="numberBtn(1)">1</button>
+                <button onclick="numberBtn(2)">2</button>
+                <button onclick="numberBtn(3)">3</button>
+                <button class="opt" onclick="handleOperator('&#43;')">&#43;</button>
+                <button onclick="numberBtn(0)">0</button>
+                <button>.</button>
+                <button>&#9003;</button>
+                <button class="opt" onclick="handleEqual()">&#61;</button>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,12 @@
+.container {
+    border: 2px double red;
+    width: 500px;
+    margin: 350px;
+    padding: 50px;
+    display: flex;
+
+}
+img{
+    width: 450px;
+    height: 550px;
+}
